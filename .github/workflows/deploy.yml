@@ -19,8 +19,8 @@ jobs:
 
       - name: Stop Old Container
         run: |
-          docker stop app || true
-          docker rm app || true
+          docker stop app app_v1 || true
+          docker rm app app_v1 || true
 
       - name: Run Container
         run: |
